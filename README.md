@@ -1,7 +1,7 @@
 # react-vite-typescript-autorouting
 
-This repository contains React Typescript with Vite
-it also contains # Chakra UI and examples of layouts if you should have some components on many pages
+This repository contains React Typescript with Vite and **Chakra UI**
+it also contains **Chakra UI** and examples of layouts if you should have some components on many pages
 
 if you must create for example product page, you should go to `src/pages` and create `product.tsx` file or create a new folder with the name product and inside create `index.tsx` file.
 
