@@ -1,5 +1,6 @@
 import React, { Fragment, lazy, Suspense } from 'react'
 import {BrowserRouter, Routes, Route } from 'react-router-dom';
+import { ChakraProvider} from "@chakra-ui/react";
 
 const ROUTES = import.meta.glob('/src/pages/**/[a-z0-9[]*.tsx')
 
@@ -25,6 +26,7 @@ const App = () => {
   const NotFound = ErrorPage != undefined ? ErrorPage.element : () => <div>404</div>
 
   return (
+    <ChakraProvider> 
       <Suspense fallback={'Loading...'}>
         <BrowserRouter>
         <Routes>
@@ -35,6 +37,7 @@ const App = () => {
           </Routes>
         </BrowserRouter>
       </Suspense>
+    </ChakraProvider>
   )
 }
 
